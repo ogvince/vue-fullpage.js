@@ -1,8 +1,8 @@
 <template>
   <div>
     <ul id="menu">
-        <li data-menuanchor="page1" class="active"><a href="#page1">Section 1</a></li>
-        <li data-menuanchor="page2"><a href="#page2">Section 2</a></li>
+        <li data-menuanchor="page1" class="active"><a href="#page1">TEST 1</a></li>
+        <li data-menuanchor="page2"><a href="#page2">TEST 2</a></li>
         <li data-menuanchor="page3"><a href="#page3">Section 3</a></li>
         <li>
             <a href="https://twitter.com/imac2" target="_blank" rel="noopener" class="twitter-share">
