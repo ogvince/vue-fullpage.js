@@ -1,13 +1,13 @@
 <template>
 <ul id="menu2">
 <!-- <a href="javascript:void(0);" v-on:click="filter(-1)"></a> -->
-<li class="directorstitle">Réalisateurs</li>
+<li class="directorstitle">Directors</li>
 <li
 v-for="aut in auteurs"
 :id="aut.id">
 <a class="underline" href="javascript:void(0);" v-on:click="filter(aut.id, 'auteur')">{{ aut.name }}</a>
 </li>
-<li class="directorstitle">PHOTOGRAPERS</li>
+<li class="directorstitle">Photographers</li>
 <li
 v-for="pho in photographers"
 :id="pho.id">
