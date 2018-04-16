@@ -15,14 +15,22 @@ body{background:black!important}
   height: 100%;
   background-size: 100% 100%;
   background-color: black;
-  background-image: /* our video */
-  ;
+  background-image: /* our video */;
   background-position: center center;
   background-size: contain;
   object-fit: cover;
   z-index: 3;
 }
-
+.videolayer{
+  position: absolute;
+  z-index: 4;
+  background: black;
+  opacity: 0.4;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+}
 .lol {
   background: green;
 }
@@ -61,10 +69,11 @@ background-color: rgba(0, 0, 0, 1);
   transition: 200ms;
 }
 .pushcontent {
-  left: 400px !important;
-  position:relative;
-  transition: 1s;
-  overflow:hidden;
+    left: 400px !important;
+    position: relative;
+    transition: 600ms!important;
+    overflow: hidden;
+    width: calc(100% - 400px)!important;
 }
 
 .goldenframe {
@@ -322,7 +331,7 @@ a.underline:hover:after {
     font-weight: 600;
     font-style: italic;
     text-transform: uppercase;
-    color: white;
+    color: #d1b47e;
     padding-top: 50px;
     padding-left: 20px;
     text-align: center;
@@ -352,9 +361,14 @@ a.underline:hover:after {
     animation-duration: 500ms;
 }
 .active {
+    transition: 500ms;
     animation-name: fadein;
     animation-duration: 500ms;
 }
+
+
+.resized{width: calc(100vw - 400px)!important;left:-200px;}
+
 li {
     width: 100%;
     padding: 6px 0px;
