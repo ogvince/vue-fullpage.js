@@ -73,7 +73,6 @@ background-color: rgba(0, 0, 0, 1);
     position: relative;
     transition: 600ms!important;
     overflow: hidden;
-    width: calc(100% - 400px)!important;
 }
 
 .goldenframe {
