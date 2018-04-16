@@ -25,36 +25,3 @@ t.default={data:function(){return{$_fullPageMixin_refName:"fullPage"}},methods:o
                 * Copyright (C) 2018 alvarotrigo.com - A project by Alvaro Trigo
                 */
 t.default={props:{options:{type:Object,default:function(){return{}}}},data:function(){var e=this;return{events:s.EVENTS.reduce(function(t,n){return i({},t,o({},n,function(){for(var t=arguments.length,r=Array(t),o=0;o<t;o++)r[o]=arguments[o];e.emitEvent(n,r)}))},{})}},watch:{options:{deep:!0,handler:function(){this.update()}}},mounted:function(){this.update()},methods:{destroy:function(){void 0!==$.fn.fullpage.destroy&&$.fn.fullpage.destroy("all")},emitEvent:function(e,t){this.$emit.apply(this,[(0,c.camelToKebab)(e)].concat(r(t))),this.options.hasOwnProperty(e)&&this.options[e].apply(this,t)},update:function(){var e=this.options.slideSelector?this.options.slideSelector:".slide",t=this.options.sectionSelector?this.options.sectionSelector:".section",n=$(".fp-section.active").index(),r=$(".fp-section.active").find(".fp-slide.active").index();this.destroy("all"),n>-1&&$(t).eq(n).addClass("active"),r>-1&&$(t+".active").find(e).eq(r).addClass("active"),$(this.$el).fullpage(i({},this.options,this.events))}}}},function(e,t,n){Object.defineProperty(t,"__esModule",{value:!0});var r=n(0),o=n.n(r);for(var i in r)"default"!==i&&function(e){n.d(t,e,function(){return r[e]})}(i);var a=n(5),s=n(2),c=s(o.a,a.a,!1,null,null,null);c.options.__file="src\\FullPage.vue",t.default=c.exports},function(e,t){e.exports=function(e,t,n,o,i,a){var s,c=e=e||{},u=r(e.default);"object"!==u&&"function"!==u||(s=e,c=e.default);var l="function"==typeof c?c.options:c;t&&(l.render=t.render,l.staticRenderFns=t.staticRenderFns,l._compiled=!0),n&&(l.functional=!0),i&&(l._scopeId=i);var f;if(a?(f=function(e){e=e||this.$vnode&&this.$vnode.ssrContext||this.parent&&this.parent.$vnode&&this.parent.$vnode.ssrContext,e||"undefined"==typeof __VUE_SSR_CONTEXT__||(e=__VUE_SSR_CONTEXT__),o&&o.call(this,e),e&&e._registeredComponents&&e._registeredComponents.add(a)},l._ssrRegister=f):o&&(f=o),f){var d=l.functional,p=d?l.render:l.beforeCreate;d?(l._injectStyles=f,l.render=function(e,t){return f.call(t),p(e,t)}):l.beforeCreate=p?[].concat(p,f):[f]}return{esModule:s,exports:c,options:l}}},function(e,t,n){Object.defineProperty(t,"__esModule",{value:!0}),t.EVENTS=["afterLoad","onLeave","afterRender","afterResize","afterResponsive","afterSlideLoad","onSlideLeave"],t.METHODS=["moveSectionUp","moveSectionDown","moveTo","silentMoveTo","moveSlideRight","moveSlideLeft","setAutoScrolling","setFitToSection","fitToSection","setLockAnchors","setAllowScrolling","setKeyboardScrolling","setRecordHistory","setScrollingSpeed","destroy","reBuild","setResponsive","responsiveSlidesToSections","responsiveSlidesToSlides"]},function(e,t,n){function r(e){return e.replace(/([a-z])([A-Z])/g,"$1-$2").toLowerCase()}Object.defineProperty(t,"__esModule",{value:!0}),t.camelToKebab=r},function(e,t,n){var r=function(){var e=this,t=e.$createElement;return(e._self._c||t)("div",[e._t("default")],2)},o=[];r._withStripped=!0;var i={render:r,staticRenderFns:o};t.a=i}])}]);
-
-
-$(function() {
-  $(".test").click(function() {
-    $("#overlaymenu").toggleClass("openmenu");
-    $(".fp-section.fp-table").toggleClass("pushcontent");
-  });
-  $("#logonemaprod").click(function() {
-    $(".fp-section.fp-table").addClass("inactive");
-    $(".fp-section.fp-table").removeClass("pushcontent");
-    $("#overlaymenu").removeClass("openmenu");
-    $("#burger-menu").removeClass("open");
-    $(".fp-section.fp-table").removeClass("inactive");
-  });
-
-  $("#burger-menu").on('click', function() {
-  $(this).toggleClass("open");
- })
-
-});
- function do_something(){
-   $(".fp-section.fp-table").addClass("inactive");
-   $(".fp-section.fp-table").removeClass("pushcontent");
-   $("#overlaymenu").removeClass("openmenu");
-   $("#burger-menu").removeClass("open");
-   $(".fp-section.fp-table").removeClass("inactive");
-    }
-    function vimeo(){
-      $(".fp-section.fp-table").removeClass("pushcontent");
-      $("#overlaymenu").removeClass("openmenu");
-      $("#burger-menu").removeClass("open");
-      $(".fp-section.fp-table").removeClass("inactive");
-       }
