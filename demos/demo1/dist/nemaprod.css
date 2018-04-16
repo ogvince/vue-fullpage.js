@@ -2,7 +2,7 @@ blockquote,body,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,pre,t
 
 
 /* ////////////////////////////////////////////// */
-
+body{background:black!important}
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 
 .fullvideo {
@@ -46,19 +46,25 @@ blockquote,body,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,pre,t
 
 #overlaymenu {
   padding-top: 50px;
-  background: #161616;
+background-color: rgba(0, 0, 0, 1);
   width: 400px;
   height: 100vh;
   position: absolute;
   top: 0px;
-  left: -500px;
+  left: -401px;
   z-index: 11;
-  transition: 200ms;
+  transition: 300ms;
 }
 
 .openmenu {
   left: 0px !important;
   transition: 200ms;
+}
+.pushcontent {
+  left: 400px !important;
+  position:relative;
+  transition: 1s;
+  overflow:hidden;
 }
 
 .goldenframe {
@@ -139,19 +145,16 @@ blockquote,body,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,pre,t
 }
 
 .popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
+    position: fixed;
+    top: 14px;
+    right: 15px;
+    transition: all 200ms;
+    font-size: 60px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
 }
 
-.popup .close:hover {
-  color: #06D85F;
-}
 
 .popup .content {
   max-height: 30%;
@@ -209,12 +212,12 @@ blockquote,body,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,pre,t
 }
 
 ul {
-  margin: 150px auto 0;
-  padding: 0;
-  list-style: none;
-  display: table;
-  width: 600px;
-  text-align: center;
+    margin: 25px auto 0;
+    padding: 0;
+    list-style: none;
+    display: table;
+    width: 100%;
+    text-align: center;
 }
 
 li {
@@ -265,14 +268,14 @@ a.underline:hover:after {
 }
 
 #burger span {
-  background: #eee;
-  display: block;
-  width: 45px;
-  height: 6px;
-  margin-bottom: 8px;
-  position: relative;
-  top: 0;
-  transition: all ease-in-out 0.2s;
+    background: #eee;
+    display: block;
+    width: 35px;
+    height: 7px;
+    margin-bottom: 7px;
+    position: relative;
+    top: 0;
+    transition: all ease-in-out 0.2s;
 }
 
 #burger-menu.open span:nth-child(2) {
@@ -314,13 +317,66 @@ a.underline:hover:after {
 }
 
 .directorstitle {
-  position: relative;
-  font-size: 18pt;
-  font-weight: 500;
-  color: white;
-  padding-top: 50px;
-  padding-left: 20px;
+    position: relative;
+    font-size: 18pt;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: uppercase;
+    color: white;
+    padding-top: 50px;
+    padding-left: 20px;
+    text-align: center;
+    padding-bottom: 25px;
+    padding-right: 20px;
+    width: 100%;
+    text-decoration: underline;
+}
+
+
+/* The animation code */
+@keyframes fadein {
+    0%   {background-color: black;opacity:0;}
+    25%  {opacity:0;}
+    50%  {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes fadeout {
+    0%   {background-color: black;opacity:1;}
+    25%  {opacity:0;}
+    50%  {opacity:0;}
+    100% {opacity:0;}
+}
+/* The element to apply the animation to */
+.inactive {
+    animation-name: fadeout;
+    animation-duration: 500ms;
+}
+.active {
+    animation-name: fadein;
+    animation-duration: 500ms;
+}
+li {
+    width: 100%;
+    padding: 6px 0px;
+}
+
+li a {
+    color: white!important;
+    font-size: 16px;
+    font-weight: 500;
+}
+#slide26 h1.titre{display:none;}
+
+.contactus {
+  font-size: 22pt;
+  color: #d0b57e;
+  width: 100%;
   text-align: center;
-  padding-bottom: 25px;
-  padding-right: 20px;
+  font-style: italic;
+}
+#menu-6{
+display:none;
+}
+#logonemaprod{
+  position: fixed;width: 100px;height: 100px;top: 10px;left: calc(50% - 50px);
 }
