@@ -1,5 +1,4 @@
-$(function() {
-
+$( document ).ready(function() {
   $(".test").click(function() {
     $("#overlaymenu").toggleClass("openmenu");
   });
@@ -15,8 +14,6 @@ $(function() {
   $("#burger-menu").on('click', function() {
     $(this).toggleClass("open");
   })
-
-
 });
 
 
