@@ -1,7 +1,6 @@
-$( document ).ready(function() {
   $(".test").click(function() {
     $("#overlaymenu").toggleClass("openmenu");
-  });
+  }
 
   $("#logonemaprod").click(function() {
     $.fn.fullpage.moveTo(1);
@@ -9,12 +8,12 @@ $( document ).ready(function() {
     $("#overlaymenu").removeClass("openmenu");
     $("#burger-menu").removeClass("open");
     $(".fp-section.fp-table").removeClass("inactive");
-  });
+  }
 
+                           
   $("#burger-menu").on('click', function() {
     $(this).toggleClass("open");
-  })
-});
+  }
 
 
 function do_something() {
