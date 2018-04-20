@@ -1,24 +1,20 @@
-  $(".test").click(function() {
+function logonemaprod() {
+  $.fn.fullpage.moveTo(1);
+  $(".fp-section.fp-table").addClass("inactive");
+  $("#overlaymenu").removeClass("openmenu");
+  $("#burger-menu").removeClass("open");
+  $(".fp-section.fp-table").removeClass("inactive");
+}
+
+
+function openmenu() {
+    $("#burger-menu").toggleClass("open");
     $("#overlaymenu").toggleClass("openmenu");
-  }
-
-  $("#logonemaprod").click(function() {
-    $.fn.fullpage.moveTo(1);
-    $(".fp-section.fp-table").addClass("inactive");
-    $("#overlaymenu").removeClass("openmenu");
-    $("#burger-menu").removeClass("open");
-    $(".fp-section.fp-table").removeClass("inactive");
-  }
-
-                           
-  $("#burger-menu").on('click', function() {
-    $(this).toggleClass("open");
-  }
+}
 
 
 function do_something() {
   $(".fp-section.fp-table").addClass("inactive");
-
   $("#overlaymenu").removeClass("openmenu");
   $("#burger-menu").removeClass("open");
   $(".fp-section.fp-table").removeClass("inactive");
