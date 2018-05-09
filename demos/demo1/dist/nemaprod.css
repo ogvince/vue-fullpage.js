@@ -504,7 +504,9 @@ a.director:hover {
   overflow: hidden
 }
 .photobg img {
-
+  flex-shrink: 0;
+  min-width: 101%;
+  min-height: 101%
 }
 .alt-video {
   width: 100vw;
@@ -702,6 +704,3 @@ a {
 
 
 .true{pointer-events:none!important}
-
-.contactcolumn h1{color: #d0b57e!important;}
-.contactcolumn h2{color: white!important;}
