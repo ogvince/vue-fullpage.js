@@ -32,5 +32,4 @@ function vimeo() {
 function vimeoBack() {
   $("#logonemaprod").css("display", "block");
   $("#logonemaprod-2").css("display", "none");
-  $('iframe').attr('src', $('iframe').attr('src'));
 }
