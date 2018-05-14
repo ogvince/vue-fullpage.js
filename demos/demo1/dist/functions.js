@@ -10,6 +10,7 @@ function logonemaprod() {
 function openmenu() {
     $("#burger-menu").toggleClass("open");
     $("#overlaymenu").toggleClass("openmenu");
+    $("body").toggleClass("nonscrollable");
 }
 
 
@@ -18,6 +19,9 @@ function do_something() {
   $("#overlaymenu").removeClass("openmenu");
   $("#burger-menu").removeClass("open");
   $(".fp-section.fp-table").removeClass("inactive");
+
+
+    $("body").removeClass("nonscrollable");
 }
 
 function vimeo() {
