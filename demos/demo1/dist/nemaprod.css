@@ -516,7 +516,7 @@ a.director:hover {
   align-items: center;
   overflow: hidden
 }
-.photobg {
+.photobg img {
   flex-shrink: 0;
   min-width: 101%;
   min-height: 101%
