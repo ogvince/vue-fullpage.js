@@ -618,7 +618,9 @@ li {
 
 @media screen and (max-width: 400px) {
 
-
+  .photobg, .alt-video {
+    height: 100%!important;
+  }
 
 
 
@@ -692,7 +694,9 @@ video {display:none;}
 .alt-video{
   display:flex!important;
 }
-
+.photobg img {
+width:100%
+}
 
 
 
