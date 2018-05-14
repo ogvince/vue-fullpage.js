@@ -425,6 +425,19 @@ li a {
   left: calc(50% - 50px)
 }
 
+#logonemaprod .logopc{
+display:block;
+}
+#logonemaprod-2 .logopc{
+display:block;
+}
+#logonemaprod .logomobile{
+display:none;
+}
+#logonemaprod-2 .logimobile{
+display:none;
+}
+
 #logonemaprod-2 {
   position: fixed;
   width: 100px;
@@ -541,6 +554,8 @@ a.socialmedia {
   border-color: white !important;
 }
 
+
+
 @media screen and (max-width: 1010px) {
 .contactholder {
   width: 100vw;
@@ -558,6 +573,8 @@ a.socialmedia {
   font-size: 12px;
 }
 }
+
+
 @media screen and (max-width: 450px) {
 .contactholder {
 top:25vh!important;
@@ -565,8 +582,7 @@ top:25vh!important;
 }
 
 
-
-@media screen and (max-width: 910px) {
+@media screen and (max-width:600px) {
   ul {
       margin: 25px auto 0;
       padding: 0;
@@ -590,7 +606,6 @@ li {
     left:0px!important;
     background-color: rgba(0, 0, 0, 1)!important;
   }
-
   .licontact {
       position: absolute !important;
       left: calc(50% - 25.5px)!important;
@@ -599,18 +614,39 @@ li {
       text-align: center!important;
       border-color: white !important;
   }
+}
+
+@media screen and (max-width: 400px) {
+
+
+
+
+
+  #logonemaprod .logopc{
+  display:none;
+  }
+  #logonemaprod-2 .logopc{
+  display:none;
+  }
+  #logonemaprod .logomobile{
+  display:block;
+  }
+  #logonemaprod-2 .logimobile{
+  display:block;
+  }
+
 
 .fp-section.fp-table, .fp-slide.fp-table {
-    height: 100vh!important;
-    min-height: 100vh!important;
-    max-height: 100vh!important;
+    height: calc(100vh / 3)!important;
+    min-height: calc(100vh / 3)!important;
+    max-height: calc(100vh / 3)!important;
 }
 .link {
-    height: 100vh;
+    height: calc(100vh / 3);
 }
 .frameholder {
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh / 3);
     position: absolute;
     top: 0vh;
     display: flex;
@@ -618,8 +654,10 @@ li {
     justify-content: center;
 
 }
+.goldenframe, .frameholder{opacity:1!important}
+.overlay{position:fixed; overflow:hidden;}
 .videolayer {
-  height: 100vh;
+  height: calc(100vh / 3);
 }
 
 .active {
@@ -631,7 +669,7 @@ li {
 iframe{
 top: 15%!important;
 width: 90%!important;
-height: 70%!important;
+height: 33%!important;
 }
 
 .categorie {
@@ -655,7 +693,25 @@ video {display:none;}
   display:flex!important;
 }
 
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .contactcolumn {
     white-space: nowrap;
@@ -704,3 +760,7 @@ a {
 
 
 .true{pointer-events:none!important}
+
+
+
+.nonscrollable{position:fixed!important; overflow: hidden!important;}
