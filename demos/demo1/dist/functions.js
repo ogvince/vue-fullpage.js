@@ -27,9 +27,12 @@ function vimeo() {
   $("#burger-menu").removeClass("open");
   $(".fp-section.fp-table").removeClass("inactive");
 
+  $("body").addClass("nonscrollable");
 }
 
 function vimeoBack() {
   $("#logonemaprod").css("display", "block");
   $("#logonemaprod-2").css("display", "none");
+
+  $("body").removeClass("nonscrollable");
 }
