@@ -516,7 +516,7 @@ a.director:hover {
   align-items: center;
   overflow: hidden
 }
-.photobg img {
+.photobg {
   flex-shrink: 0;
   min-width: 101%;
   min-height: 101%
@@ -622,7 +622,9 @@ li {
     height: 100%!important;
   }
 
-
+.alt-video img{
+width:100%;
+}
 
   #logonemaprod .logopc{
   display:none;
