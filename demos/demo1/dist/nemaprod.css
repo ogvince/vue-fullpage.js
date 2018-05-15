@@ -770,3 +770,13 @@ a {
 
 
 .nonscrollable{position:fixed!important; overflow: hidden!important;}
+
+
+@media (pointer: fine) {
+  a span {
+    display: none;
+  }
+  a:hover span {
+    display: inline-block;
+  }
+}
