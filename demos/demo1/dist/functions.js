@@ -38,6 +38,9 @@ function vimeoBack() {
   $("#logonemaprod").css("display", "block");
   $("#logonemaprod-2").css("display", "none");
 
-  $("iframe").src = $("iframe").src;
+$('iframe').attr("src", function(index, attr){ 
+  return attr;
+});
+  
   $("body").removeClass("nonscrollable");
 }
