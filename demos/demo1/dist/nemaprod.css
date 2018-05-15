@@ -325,7 +325,7 @@ a.underline:hover:after {
   transform: skewX(-10deg);
   text-transform: uppercase;
   color: #d1b47e;
-  padding-top: 50px;
+  padding-top: 10px;
   padding-left: 0;
   text-align: center;
   padding-bottom: 1px;
