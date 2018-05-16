@@ -518,9 +518,10 @@ a.director:hover {
   overflow: hidden
 }
 .photobg img {
+ width: 100%;
   flex-shrink: 0;
-  min-width: 101%;
-  min-height: 101%
+  min-width: 100%;
+  min-height: 100%
 }
 .alt-video {
   width: 100vw;
