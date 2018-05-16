@@ -514,7 +514,7 @@ a.director:hover {
   z-index: 4;
   display: flex;
   justify-content: center;
-  align-items: center;
+	align-items: flex-end;
   overflow: hidden
 }
 .photobg img {
