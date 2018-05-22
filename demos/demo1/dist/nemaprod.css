@@ -618,7 +618,7 @@ li {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
 
   .photobg, .alt-video {
     height: 100%!important;
@@ -637,7 +637,7 @@ width:100%;
   #logonemaprod .logomobile{
   display:block;
   }
-  #logonemaprod-2 .logimobile{
+  #logonemaprod-2 .logomobile{
   display:block;
   }
 
