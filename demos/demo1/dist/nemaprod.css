@@ -23,7 +23,7 @@ a {
   user-select: none;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  box-sizing: border-box
 }
 
 .fullvideo {
@@ -195,8 +195,7 @@ a {
   top: 0;
   width: 100vw;
   height: 100vh;
-cursor: pointer;
-  pointer-events: auto;
+  pointer-events: all;
 }
 
 .auteur {
@@ -236,7 +235,7 @@ cursor: pointer;
 }
 
 ul {
-  margin: 5px auto 0;
+  margin: 25px auto 0;
   padding: 0;
   list-style: none;
   display: table;
@@ -325,7 +324,7 @@ a.underline:hover:after {
   transform: skewX(-10deg);
   text-transform: uppercase;
   color: #d1b47e;
-  padding-top: 10px;
+  padding-top: 50px;
   padding-left: 0;
   text-align: center;
   padding-bottom: 1px;
@@ -399,7 +398,8 @@ li {
 
 li a {
   color: white !important;
-  font-size: 16px
+  font-size: 16px;
+  display:block;
 }
 
 #slide26 h1.titre {
@@ -435,7 +435,7 @@ display:block;
 #logonemaprod .logomobile{
 display:none;
 }
-#logonemaprod-2 .logomobile{
+#logonemaprod-2 .logimobile{
 display:none;
 }
 
@@ -514,14 +514,13 @@ a.director:hover {
   z-index: 4;
   display: flex;
   justify-content: center;
-	align-items: flex-end;
+  align-items: center;
   overflow: hidden
 }
 .photobg img {
- width: 100%;
   flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%
+  min-width: 101%;
+  min-height: 101%
 }
 .alt-video {
   width: 100vw;
@@ -618,15 +617,13 @@ li {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 400px) {
 
   .photobg, .alt-video {
     height: 100%!important;
   }
 
-.alt-video img{
-width:100%;
-}
+
 
   #logonemaprod .logopc{
   display:none;
@@ -637,7 +634,7 @@ width:100%;
   #logonemaprod .logomobile{
   display:block;
   }
-  #logonemaprod-2 .logomobile{
+  #logonemaprod-2 .logimobile{
   display:block;
   }
 
@@ -679,15 +676,15 @@ height: 33%!important;
 }
 
 .categorie {
-    font-size: 9pt;
+    font-size: 11pt;
     margin-bottom: -5px;
 }
 .auteur {
-    font-size: 20pt;
+    font-size: 22pt;
     padding-bottom: 5px;
 }
 .titre {
-    font-size: 14pt;
+    font-size: 17pt;
     margin-top: -14px;
 }
 
@@ -769,16 +766,8 @@ a {
 
 .true{pointer-events:none!important}
 
-
-
 .nonscrollable{position:fixed!important; overflow: hidden!important;}
 
-
-@media (pointer: fine) {
-  a span {
-    display: none;
-  }
-  a:hover span {
-    display: inline-block;
-  }
+.director::first-letter {
+    color: black;
 }
