@@ -180,6 +180,7 @@ a {
 
 
 @media screen and (max-width:900px) {
+
   .popup {
       width: 100%;
       background: black;
@@ -586,6 +587,9 @@ top:25vh!important;
 
 
 @media screen and (max-width:600px) {
+  li#menu-40 {
+    float:left;
+  }
   ul {
       margin: 25px auto 0;
       padding: 0;
