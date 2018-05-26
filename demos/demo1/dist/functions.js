@@ -38,11 +38,22 @@ function vimeoBack() {
   $("#logonemaprod").css("display", "block");
   $("#logonemaprod-2").css("display", "none");
 
-$('iframe').attr("src", function(index, attr){ 
-  return attr;
-});
-  
   $("body").removeClass("nonscrollable");
 }
 
+var val = $("a.director").html();
+$("a.director").html(val.substring(1, val.length));
 
+
+$("a.director").each(function() {
+  $(this).text($(this).text().replace(/[+-]/, ""));
+});
+
+
+  function myFunction() {
+  console.log("kiwi");
+  $("a#link23").click();
+  $("a#link23").trigger( "click" );
+  jQuery('#link23')[0].click();
+  $('#link23')[0].click();
+  }
