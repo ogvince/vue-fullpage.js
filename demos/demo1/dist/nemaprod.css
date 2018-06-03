@@ -586,7 +586,7 @@ top:25vh!important;
 }
 
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:600px), screen and (max-height: 700px) {
   li#menu-40 {
     float:left;
   }
@@ -614,16 +614,27 @@ li {
     background-color: rgba(0, 0, 0, 1)!important;
   }
   .licontact {
-      position: absolute !important;
+      position: relative !important;
       left: calc(50% - 25.5px)!important;
       bottom: 15px;
       width: 63px;
+      top: 20px;
       text-align: center!important;
       border-color: white !important;
   }
+  .social {
+    position: static !important;
+    padding-top: 16px;
+    left: 0!important;
+    bottom: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-color: white !important;
+}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
 
   .photobg, .alt-video {
     height: 100%!important;
@@ -776,4 +787,53 @@ a {
 
 .director::first-letter {
     color: black;
+}
+
+.vimeo_iframe{
+  position:absolute; top:5%; left:5%; bottom:5%; right:5%; width:90%; height:90%; border:none; margin:0; padding:0; overflow:hidden;
+}
+
+#preloader{width: 100vw; height:100vh; background:black; z-index:30000; position: fixed;top:0;left: 0}
+
+#progressbar {
+    height: 260px;
+    position: absolute;
+    left: calc(50% - 80px);
+    top: 40%;
+    width: 160px;
+    border-radius: 3px;
+    padding: 2px;
+}
+#loading{
+  transition: all 500ms ease;
+  height: 8px;
+  width: calc(100% - 10px);
+  border-radius: 3px;
+  background: #d0b57e;
+  position: absolute;
+  margin: 0px;
+  display: inline-block;
+  animation: load 5s ease forwards;
+}
+
+#progressbar img {
+	width:100%;
+
+
+	padding-bottom:70px;
+}
+
+@keyframes load{
+  0%{
+		opacity:1;
+    width: 0%;
+  }
+  90%{
+		opacity:1;
+    width: 100%;
+  }
+	100%{
+		opacity:0;
+		width: 100%;
+	}
 }
