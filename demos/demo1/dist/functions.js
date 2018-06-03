@@ -30,15 +30,19 @@ function vimeo() {
   $("#overlaymenu").removeClass("openmenu");
   $("#burger-menu").removeClass("open");
   $(".fp-section.fp-table").removeClass("inactive");
-
   $("body").addClass("nonscrollable");
+  $("iframe").each(function(){
+      $(this).attr("src", $(this).data("src"));
+  });
 }
 
 function vimeoBack() {
   $("#logonemaprod").css("display", "block");
   $("#logonemaprod-2").css("display", "none");
-
-  $("body").removeClass("nonscrollable");
+  $('iframe').attr("src", function(index, attr){
+  return attr;
+  });
+  $("iframe").attr('src', 'about:blank');
 }
 
 var val = $("a.director").html();
