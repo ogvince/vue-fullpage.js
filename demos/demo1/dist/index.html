@@ -12,12 +12,26 @@
     </head>
 
   <body>
+    <div id="preloader">
+      <div id="progressbar">
+
+      	 <img src="https://nervous-tesla-b2b907.netlify.com/nemaprod.svg" id="logopreload" />
+         <span id="loading"></span>
+
+      </div>
+    </div>
+
     <div id="demoApp">
       <demo-app></demo-app>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.js"></script>
-    <script src="functions.js"></script><!-- jquery needs -->
-
+    <script src="functions.js"></script>
+    <script type="text/javascript">
+    $( "#preloader" ).delay( 5700 ).fadeOut( "100", function() {
+    });
+    $( "#progressbar" ).delay( 5500 ).fadeOut( "300", function() {
+    });
+    </script>
   <script type="text/javascript" src="bundle.js"></script></body>
 </html>
