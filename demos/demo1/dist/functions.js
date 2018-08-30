@@ -19,9 +19,14 @@ function do_something() {
   $("#overlaymenu").removeClass("openmenu");
   $("#burger-menu").removeClass("open");
   $(".fp-section.fp-table").removeClass("inactive");
-
-
-    $("body").removeClass("nonscrollable");
+  $("#directors").removeClass( "visible" );
+  $("#photographers").removeClass( "visible" );
+  $("#arrow").removeClass( "visible" );
+  $("#directorstitle").removeClass( "hidden" );
+  $("#photographerstitle").removeClass( "hidden" );
+  $("#directorstitle").addClass( "visible" );
+  $("#photographerstitle").addClass( "visible" );
+  $("body").removeClass("nonscrollable");
 }
 
 function vimeo() {
@@ -43,6 +48,7 @@ function vimeoBack() {
   return attr;
   });
   $("iframe").attr('src', 'about:blank');
+    $("body").removeClass("nonscrollable");
 }
 
 var val = $("a.director").html();
@@ -60,4 +66,32 @@ $("a.director").each(function() {
   $("a#link23").trigger( "click" );
   jQuery('#link23')[0].click();
   $('#link23')[0].click();
+  }
+
+
+
+  function showDirectors() {
+    $("#directors").toggleClass( "visible" );
+    $("#photographerstitle").toggleClass( "hidden" );
+    $("#photographers").toggleClass( "hidden" );
+    $("#arrow").toggleClass( "visible" );
+  }
+
+  function showPhotographers() {
+    $("#photographers").toggleClass( "visible" );
+    $("#directorstitle").toggleClass( "hidden" );
+    $("#arrow").toggleClass( "visible" );
+    $("#directors").toggleClass( "hidden" );
+  }
+
+  function arrowBack() {
+    $("#directors").removeClass( "visible" );
+    $("#photographers").removeClass( "visible" );
+    $("#directors").removeClass( "hidden" );
+    $("#photographers").removeClass( "hidden" );
+    $("#arrow").removeClass( "visible" );
+    $("#directorstitle").removeClass( "hidden" );
+    $("#photographerstitle").removeClass( "hidden" );
+    $("#directorstitle").addClass( "visible" );
+    $("#photographerstitle").addClass( "visible" );
   }
