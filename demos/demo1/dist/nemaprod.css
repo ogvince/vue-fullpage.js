@@ -82,7 +82,8 @@ a {
   top: 0;
   left: -401px;
   z-index: 11;
-  transition: 300ms
+  transition: 300ms;
+  overflow-y: scroll;
 }
 
 .openmenu {
@@ -331,6 +332,16 @@ a.underline:hover:after {
   border-bottom: 2px solid #d1b47e;
   width: auto
 }
+.contacttitle {
+    font-size: 18pt;
+    font-weight: 600;
+    transform: skewX(-10deg);
+    text-transform: uppercase;
+    color: #d1b47e;
+    padding-top: 50px;
+    padding-left: 0;
+    width: auto;
+}
 
 @keyframes fadein {
   0% {
@@ -480,12 +491,12 @@ display:none;
 }
 
 .licontact {
-  position: absolute !important;
-  left: 110px;
-  bottom: 15px;
-  width: 63px;
-  border-color: white !important;
-  padding-top: 0px;
+    position: fixed;
+    right: 22px;
+    top: 25px;
+    width: 63px;
+    border-color: white !important;
+    padding-top: 0px;
 }
 
 .licontact a:hover {
@@ -545,13 +556,13 @@ a.socialmedia {
     padding: 0 15px;
 }
 .social {
-  position: absolute !important;
-  left: 0!important;
-  bottom: 60px;
-  width: 100%;
-  display:flex;
-  justify-content: center;
-  border-color: white !important;
+    position: fixed;
+    right: 105px;
+    top: 20px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    border-color: white !important;
 }
 
 
