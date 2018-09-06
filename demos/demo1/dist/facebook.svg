@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+	 viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
 </style>
-<title  id="simpleicons-facebook-icon">Facebook icon</title>
-<path class="st0" d="M22.7,0H1.3C0.6,0,0,0.6,0,1.3v21.4C0,23.4,0.6,24,1.3,24h11.5v-9.3H9.7v-3.6h3.1V8.4c0-3.1,1.9-4.8,4.7-4.8
-	c1.3,0,2.5,0.1,2.8,0.1V7h-1.9c-1.5,0-1.8,0.7-1.8,1.8v2.3h3.6l-0.5,3.6h-3.1V24h6.1c0.7,0,1.3-0.6,1.3-1.3V1.3
-	C24,0.6,23.4,0,22.7,0"/>
+<path id="XMLID_19_" class="st0" d="M44.45459,27.4575v-5.3066c0-2.5855,1.7246-3.1875,2.9346-3.1875c1.2085,0,7.44381,0,7.44381,0
+	V7.5928L44.58109,7.5493c-11.3794,0-13.9654,8.4815-13.9654,13.9097v5.9985h-6.581v8.0176v5.2524h6.6367
+	c0,15.0401,0,33.1788,0,33.1788h13.2705c0,0,0-18.3209,0-33.1788h9.8496l0.4766-5.2119l0.7334-8.0581H44.45459z"/>
 </svg>
