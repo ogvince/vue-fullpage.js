@@ -494,19 +494,23 @@ display:none;
     position: fixed;
     right: 22px;
     top: 25px;
+    transform: skewX(-10deg);
     width: 63px;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
     border-color: white !important;
     padding-top: 0px;
 }
 
 .licontact a:hover {
-  color: #d0b57e !important;
-  border-color: #d0b57e !important
+  color: #d0b57e ;
+  border-color: #d0b57e;
 }
 
 .licontact:hover {
-  color: #d0b57e !important;
-  border-color: #d0b57e !important
+  color: #d0b57e;
+  border-color: #d0b57e;
 }
 
 a.director:hover {
@@ -557,8 +561,8 @@ a.socialmedia {
 }
 .social {
     position: fixed;
-    right: 105px;
-    top: 20px;
+    right: 90px;
+    top: 24px;
     width: auto;
     display: flex;
     justify-content: center;
@@ -598,7 +602,7 @@ top:25vh!important;
     float:left;
   }
   ul {
-      margin: 25px auto 0;
+      margin: 115px auto 0;
       padding: 0;
       list-style: none;
       display: table;
@@ -616,22 +620,24 @@ top:25vh!important;
   }
   .licontact {
       position: absolute !important;
-      left: calc(50% - 25.5px)!important;
-      bottom: 15px;
+      left: calc(50% - 33px)!important;
+      bottom: 25px;
+      top: inherit;
+      color: white!important;
       width: 63px;
       text-align: center!important;
       border-color: white !important;
   }
   .social {
-    position: absolute !important;
-    padding-top: 16px;
-    left: 0!important;
-    bottom: 60px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    border-color: white !important;
-}
+      position: absolute !important;
+      top: inherit;
+      left: 0!important;
+      bottom: 60px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      border-color: white !important;
+  }
 }
 
 #photographers{display:block;transition:opacity 100ms linear;color:white}
@@ -677,6 +683,7 @@ top:25vh!important;
 }
 .link {
     height: calc(100vh / 3);
+    z-index: 6;
 }
 .frameholder {
     width: 100vw;
