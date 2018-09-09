@@ -140,13 +140,13 @@ a {
   right: 0;
   background: rgba(0, 0, 0, 1);
   transition: opacity 400ms ease;
-  visibility: hidden;
+  display: none;
   opacity: 0;
   z-index: 7;
 }
 
 .overlay:target {
-  visibility: visible;
+  display: flex;
   opacity: 1
 }
 
