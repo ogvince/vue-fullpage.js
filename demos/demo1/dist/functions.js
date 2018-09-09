@@ -30,6 +30,7 @@ function do_something() {
 }
 
 function vimeo() {
+  $(".overlay").css("display", "flex");
   $("#logonemaprod").css("display", "none");
   $("#logonemaprod-2").css("display", "block");
   $("#overlaymenu").removeClass("openmenu");
@@ -42,6 +43,7 @@ function vimeo() {
 }
 
 function vimeoBack() {
+  $(".overlay").css("display", "none");
   $("#logonemaprod").css("display", "block");
   $("#logonemaprod-2").css("display", "none");
   $('iframe').attr("src", function(index, attr){
