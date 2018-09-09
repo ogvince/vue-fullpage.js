@@ -656,6 +656,8 @@ top:25vh!important;
 
 @media screen and (max-width: 600px) {
 
+  .link{cursor:pointer!important}
+
   .photobg, .alt-video {
     height: 100%!important;
   }
