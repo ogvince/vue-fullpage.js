@@ -3,7 +3,6 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-  baseUrl: process.env.NODE_ENV === 'production',
   resolve: {
     alias: {
       'vue$': 'vue/dist/vue.js'
@@ -30,9 +29,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.DefinePlugin({
-     'process.env.NODE_ENV': JSON.stringify('production')
-   }),
     new HtmlWebpackPlugin({
       inject: true,
       hash: false,
