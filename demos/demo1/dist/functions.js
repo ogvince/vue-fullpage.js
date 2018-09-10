@@ -8,9 +8,17 @@ function logonemaprod() {
 
 
 function openmenu() {
-    $("#burger-menu").toggleClass("open");
-    $("#overlaymenu").toggleClass("openmenu");
-    $("body").toggleClass("nonscrollable");
+    $("#burger-menu").addClass("open");
+    $("#overlaymenu").addClass("openmenu");
+    $("body").addClass("nonscrollable");
+    $("#closemenu").css("display", "block");
+}
+
+function closemenu() {
+    $("#burger-menu").removeClass("open");
+    $("#overlaymenu").removeClass("openmenu");
+    $("body").removeClass("nonscrollable");
+    $("#closemenu").css("display", "none");
 }
 
 
@@ -30,7 +38,8 @@ function do_something() {
 }
 
 function vimeo() {
-  $(".overlay").css("display", "flex");
+  // $(".overlay").css("display", "flex");
+  $(".social, .licontact").css("display", "none");
   $("#logonemaprod").css("display", "none");
   $("#logonemaprod-2").css("display", "block");
   $("#overlaymenu").removeClass("openmenu");
@@ -43,20 +52,32 @@ function vimeo() {
 }
 
 function vimeoBack() {
-  $(".overlay").css("display", "none");
+  // $(".overlay").css("display", "none");
+  $(".social, .licontact").css("display", "block");
   $("#logonemaprod").css("display", "block");
   $("#logonemaprod-2").css("display", "none");
   $('iframe').attr("src", function(index, attr){
   return attr;
   });
-  $("iframe").attr('src', 'about:blank');
-    $("body").removeClass("nonscrollable");
+  $("body").removeClass("nonscrollable");
+  window.location = "#";
 }
 
+function vimeoMenu() {
+  // $(".overlay").css("display", "none");
+  $(".social, .licontact").css("display", "block");
+  $("#logonemaprod").css("display", "block");
+  $("#logonemaprod-2").css("display", "none");
+  $('iframe').attr("src", function(index, attr){
+  return attr;
+  });
+  // $("body").removeClass("nonscrollable");
+  window.location = "#";
+}
+
+
 var val = $("a.director").html();
-$("a.director").html(val.substring(1, val.length));
-
-
+// $("a.director").html(val.substring(1, val.length));
 $("a.director").each(function() {
   $(this).text($(this).text().replace(/[+-]/, ""));
 });
@@ -96,4 +117,16 @@ $("a.director").each(function() {
     $("#photographerstitle").removeClass( "hidden" );
     $("#directorstitle").addClass( "visible" );
     $("#photographerstitle").addClass( "visible" );
+  }
+  function videoIcon() {
+  $(".playicon").css("display", "block");
+  $(".categorie").css("opacity", "0");
+  $(".auteur").css("opacity", "0");
+  $(".titre").css("opacity", "0");
+  }
+  function videoIcon2() {
+  $(".playicon").css("display", "none");
+  $(".categorie").css("opacity", "1");
+  $(".auteur").css("opacity", "1");
+  $(".titre").css("opacity", "1");
   }
