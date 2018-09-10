@@ -1,6 +1,14 @@
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 module.exports = {
+  entry: ['./demos/demo1/src/Constants.js', './demos/demo1/src/index.js', './functions.js'],
+  output: {
+    path: path.resolve('bundle'),
+    filename: 'bundle.js',
+    publicPath: ''
+},
   resolve: {
     alias: {
       'vue$': 'vue/dist/vue.js'
@@ -14,7 +22,8 @@ module.exports = {
         options: {
           loaders: {
             scss: 'vue-style-loader!css-loader!sass-loader',
-            js: 'babel-loader'
+            js: 'babel-loader',
+            css: 'css-loader'
           }
         }
       },
@@ -23,6 +32,11 @@ module.exports = {
         use: {
           loader: 'babel-loader',
         }
+      },
+      {
+          test: /\.css$/,
+          exclude: /node_modules/,
+          loaders: ['css-loader'],
       }
     ]
   },
@@ -32,6 +46,7 @@ module.exports = {
         warnings: false,
         drop_console: false,
       }
-    })
+    }),
+    new HtmlWebpackPlugin({ title: 'NEMAProd', template: './demos/template.html' })
   ],
 };
