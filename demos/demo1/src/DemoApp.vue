@@ -1,7 +1,8 @@
 <template>
   <div>
+    <div id="closemenu"></div>
 
-    <div id="burger-menu" class="test">
+    <div id="burger-menu" class="bgr">
     	<div id="burger">
         <span>&nbsp;</span>
         <span>&nbsp;</span>
@@ -9,10 +10,10 @@
     	</div>
     </div>
 
-    <div id="overlaymenu">
+
+    <div id="overlaymenu" class="class">
       <header-nav v-bind:auteurs="auteurs" v-bind:filter="filter" v-bind:photographers="photographers"></header-nav>
     </div>
-
     <div>
         <projects v-bind:projects="projects"></projects>
     </div>
@@ -40,6 +41,7 @@
 
     data() {
       return {
+        contact: [],
         projects: [],
         auteurs: [],
         photographers: [],
@@ -69,7 +71,6 @@
         }
 
         if (type === 'contact') {
-          this.previousId = -1;
           this.fetchProjects(GET_CONTACT_API);
           return;
         }
@@ -85,6 +86,7 @@
           return;
         }
       },
+
       fetchProjects: function(api) {
   this.projects = [];
   this.$http.get(api).then(response => {

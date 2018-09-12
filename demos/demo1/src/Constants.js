@@ -1,6 +1,7 @@
+// Production
 export const GET_HOME_PROJECTS_API = 'wp/v2/projects?auteur=6';
 export const GET_USER_API = 'wp/v2/auteur';
-export const BASE_API = 'https://neueweb.studio/nema/wp-json/';
+export const BASE_API = 'https://admin.nemaprod.fr/wp-json/';
 export const GET_AUTHOR_PROJECTS_API = 'wp/v2/projects?auteur=';
 
 export const GET_PHOTOGRAPERS_API = 'wp/v2/photographe';

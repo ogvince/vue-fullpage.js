@@ -16,4 +16,5 @@ const app = new Vue({
   components: {
       'demo-app': DemoApp,
   }
+  
 }).$mount('#demoApp');
