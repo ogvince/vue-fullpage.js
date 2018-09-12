@@ -14,8 +14,8 @@
   <body>
     <div id="preloader">
       <div id="progressbar">
-      	 <img src="https://nervous-tesla-b2b907.netlify.com/nemaprod.svg" id="logopreload" />
-         <!-- <span id="loading"></span> -->
+      	 <img src="preloader.gif" id="logopreload" />
+
       </div>
     </div>
 
@@ -30,8 +30,11 @@
 </script>
     <script>
       window.addEventListener("load", function(event) {
-        console.log("Toutes les ressources sont chargées !");
-        $("#preloader").fadeOut("100", function() {});
+        var gifSource = $('#logopreload').attr('src');
+        // $('#logopreload').attr('src', "");
+        $('#logopreload').attr('src', gifSource);
+        $("#logopreload").delay( 4000 ).fadeOut("50", function() {});
+        $("#preloader").delay( 4500 ).fadeOut("100", function() {});
       });
     </script>
   <script type="text/javascript" src="bundle.js"></script></body>
