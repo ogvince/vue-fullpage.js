@@ -71,7 +71,7 @@ body {
   background: green
 }
 
-.test {
+.bgr {
   color: #d0b57e;
   font-size: 20px;
   font-weight: 600;
@@ -803,11 +803,12 @@ a {
 }
 
 #progressbar {
-  height: 260px;
-  left: calc(50% - 80px);
-  top: 40%;
-  width: 160px;
-  padding: 2px
+    position: fixed;
+    height: 150px;
+    left: calc(50% - 105px);
+    top: calc(50% - 75px);
+    width: 210px;
+    padding: 2px;
 }
 
 #loading {
@@ -821,8 +822,7 @@ a {
 }
 
 #progressbar img {
-  width: 100%;
-  padding-bottom: 70px
+    width: 100%;
 }
 
 @keyframes load {

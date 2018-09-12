@@ -119,14 +119,44 @@ $("a.director").each(function() {
     $("#photographerstitle").addClass( "visible" );
   }
   function videoIcon() {
+    if(window.innerWidth > 768){
   $(".playicon").css("display", "block");
   $(".categorie").css("opacity", "0");
   $(".auteur").css("opacity", "0");
   $(".titre").css("opacity", "0");
+    }
   }
   function videoIcon2() {
+  if(window.innerWidth > 768){
   $(".playicon").css("display", "none");
   $(".categorie").css("opacity", "1");
   $(".auteur").css("opacity", "1");
   $(".titre").css("opacity", "1");
+    }
   }
+
+  $( document ).ready(function() {
+      console.log( "ready!" );
+
+      $( "#closemenu" ).click(closemenu);
+      $( "#burger-menu" ).click(openmenu);
+      $( "#burger-menu" ).click(vimeoMenu);
+
+      $( "#logonemaprod" ).click(closemenu);
+      $( "#arrow, #directors, #photographers" ).click(arrowBack);
+      $( "#directorstitle" ).click(showDirectors);
+      $( "#photographerstitle" ).click(showPhotographers);
+      $( ".licontact a, #directors, #photographers" ).click(do_something);
+
+      $(document).on("click",".close-button",function() {
+             vimeoBack();
+         });
+      $(document).on("click",".link:not(#slide26 > div.frameholder > a)",function() {
+             vimeo();
+         });
+
+      $(document).on("click","#go5",function() {
+                myFunction();
+            });
+
+  });
