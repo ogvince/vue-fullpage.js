@@ -3,16 +3,39 @@
   <head>
     <meta charset="UTF-8">
     <title>NEMAProd</title>
+
+<meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css"href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css">
     <link rel="stylesheet" type="text/css"href="nemaprod.css">
     </head>
 
   <body>
+    <div id="preloader">
+      <div id="progressbar">
+      	 <img src="preloader.gif" id="logopreload" />
+
+      </div>
+    </div>
+
     <div id="demoApp">
       <demo-app></demo-app>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.js"></script>
-    <script src="functions.js"></script><!-- jquery needs -->
+    <script src="functions.js"></script>
+<script>
+
+</script>
+    <script>
+      window.addEventListener("load", function(event) {
+        var gifSource = $('#logopreload').attr('src');
+        // $('#logopreload').attr('src', "");
+        $('#logopreload').attr('src', gifSource);
+        $("#logopreload").delay( 4000 ).fadeOut("50", function() {});
+        $("#preloader").delay( 4500 ).fadeOut("100", function() {});
+      });
+    </script>
   </body>
 </html>
