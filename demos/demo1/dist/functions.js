@@ -148,9 +148,9 @@ $("a.director").each(function() {
              logonemaprod();
          });
 
-      $( "#arrow, #directors, #photographers" ).click(arrowBack);
-      $( "#directorstitle" ).click(showDirectors);
-      $( "#photographerstitle" ).click(showPhotographers);
+      // $( "#arrow, #directors, #photographers" ).click(arrowBack);
+      // $( "#directorstitle" ).click(showDirectors);
+      // $( "#photographerstitle" ).click(showPhotographers);
       $( ".licontact a, #directors, #photographers" ).click(do_something);
 
       $(document).on("click",".close-button",function() {

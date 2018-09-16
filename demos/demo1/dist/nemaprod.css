@@ -406,7 +406,7 @@ li a {
 }
 
 #logonemaprod, #logonemaprod-2 {
-  position: fixed;
+  position: fixed!important;
   width: 100px;
   height: 100px;
   top: 10px;
@@ -587,17 +587,18 @@ a.socialmedia {
   }
   .licontact {
     left: calc(50% - 33px) !important;
-    bottom: 25px;
+    bottom: 80px;
     color: #fff !important;
     width: 63px;
     text-align: center !important
   }
   .social {
     left: 0 !important;
-    bottom: 60px;
+    bottom: 120px;
     width: 100%;
     justify-content: center
   }
+  #lottie{height:40%!important;width:40%!important}
 }
 
 #arrow, .contactholder, .vimeo_iframe {
@@ -636,8 +637,11 @@ a.socialmedia {
   #logonemaprod .logopc, #logonemaprod-2 .logopc {
     display: none
   }
-  #logonemaprod .logomobile, #logonemaprod-2 .logimobile {
+  /* #logonemaprod .logomobile, #logonemaprod-2 .logomobile {
     display: block
+  } */
+  #logonemaprod .logomobile {
+    display: block!important
   }
   .fp-section.fp-table, .fp-slide.fp-table {
     height: calc(100vh / 3) !important;
