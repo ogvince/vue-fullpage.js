@@ -142,7 +142,12 @@ $("a.director").each(function() {
       $( "#burger-menu" ).click(openmenu);
       $( "#burger-menu" ).click(vimeoMenu);
 
-      $( "#logonemaprod" ).click(closemenu);
+
+      $(document).on("click","#logonemaprod",function() {
+             closemenu();
+             logonemaprod();
+         });
+
       $( "#arrow, #directors, #photographers" ).click(arrowBack);
       $( "#directorstitle" ).click(showDirectors);
       $( "#photographerstitle" ).click(showPhotographers);
