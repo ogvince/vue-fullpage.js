@@ -631,6 +631,7 @@ a.socialmedia {
 }
 
 @media screen and (max-width:600px) {
+
   .alt-video, .photobg {
     height: 100% !important
   }
@@ -897,4 +898,9 @@ div#closemenu {
   transform: translate3d(0, 0, 0);
   text-align: center;
   opacity: 1;
+}
+
+@media screen and (max-width:600px) {
+  .playicon{display:none!important;visibility: hidden:!important;opacity:0!important}
+  .auteur, .categorie, .titre{display:block!important;visibility: visible:!important;opacity:1!important}
 }
