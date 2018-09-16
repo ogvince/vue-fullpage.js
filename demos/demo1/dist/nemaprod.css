@@ -248,7 +248,7 @@ flex-direction: column;
 }
 
 ul {
-  margin: 25px auto 0;
+  margin: 10px auto 0;
   padding: 0;
   list-style: none;
   flex-direction: column;
@@ -587,14 +587,14 @@ a.socialmedia {
   }
   .licontact {
     left: calc(50% - 33px) !important;
-    bottom: 80px;
+    bottom: 60px;
     color: #fff !important;
     width: 63px;
     text-align: center !important
   }
   .social {
     left: 0 !important;
-    bottom: 120px;
+    bottom: 92px;
     width: 100%;
     justify-content: center
   }
@@ -642,7 +642,10 @@ a.socialmedia {
     display: block
   } */
   #logonemaprod .logomobile {
-    display: block!important
+    display: block!important;
+    position:fixed!important;
+    z-index:999999;
+    max-width:100px;
   }
   .fp-section.fp-table, .fp-slide.fp-table {
     height: calc(100vh / 3) !important;
